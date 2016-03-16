@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "headline": "Unleash the Ultimate Gaming Experience.",
+    "intro": "The fastest gaming performance. Unmatched processing power. Superior WiFi technology.",
+    "cta": {
+      "url": "#ScrollTarget",
+      "title": "Buy Now"
+    },
+    "image": "./assets/images/hero.png",
+    "image_alt": "Nighthawk X4S"
+  },
+  "performance": {
+    "headline": "Fastest Gaming Performance",
+    "list": [
+      "Gigabit CPU, Gigabit wired, and Gigabit WiFi, ready for 4K gaming",
+      "A gaming beast with the most advanced WiFi technology gives you unparalleled speed",
+      "Compete with other gamers, not other devices. Dynamic Quality of Service (QoS) intelligently prioritizes video streaming and gaming"
+    ],
+    "image": "./assets/images/performance.jpg",
+    "image_alt": "The Fastest Gaming Performance"
+  },
+  "power": {
+    "headline": "Unmatched Processing Power",
+    "list": [
+      "Industry’s fastest processor at 1.7GHz keeps network performance at its ultimate level – no lag, no CPU hogs, no excuses!",
+      "Dual-core processor helps dedicate processing power for network traffic and provides lowest-latency experience for all those online games ",
+      "Plenty (512MB) of memory to connect as many devices as you want for uncompromised performance that won’t miss a beat"
+    ],
+    "image": "./assets/images/power.png"
+  },
+  "technology": {
+    "headline": "Superior WiFi Technology",
+    "list": [
+      "Reach every corner of the house with powerful amplifiers, beamforming+, and 4 high performance external antennas",
+      "With fastest MU-MIMO performance per PC Magazine, a perfect match for MU-MIMO capable gaming devices such as Alienware 13, 15, and 17",
+      "Industry’s first 160MHz radio enables Nighthawk® X4S to double the bandwidth working with 160MHz enabled devices for lower latency"
+    ],
+    "image": "./assets/images/technology.png"
+  },
+  "ctas": [
+    {
+      "url": "http://www.netgear.com/home/products/networking/wifi-routers/R7800.aspx",
+      "title": "View Full Tech Specs"
+    }
+  ]
+}
