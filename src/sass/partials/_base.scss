@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	cursor: default;
+	font: $b-font-weight $b-font-size $f-regular;
+}

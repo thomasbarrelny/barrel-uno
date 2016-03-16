@@ -1,0 +1,23 @@
+/* FONTS
+-------------------------------------------------------*/
+$f-regular: Open Sans, Arial, sans-serif;
+
+
+/* COLORS
+-------------------------------------------------------*/
+$c-header: #fff;
+$c-header-bg: turquoise;
+
+
+/* BASE
+-------------------------------------------------------*/
+$b-font-size: 16px;
+$b-font-weight: 400;
+
+
+/* HEADER
+-------------------------------------------------------*/
+$header-height: 100px;
+$nav-height: 20px;
+$nav-font-size: 0.875rem;
+$nav-font-weight: 600;

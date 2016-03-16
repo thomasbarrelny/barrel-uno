@@ -4,7 +4,9 @@
 		<nav class="nav">
 			<ul class="nav__list">
 				{{#each links}}
-				<li class="nav__list-item">{{title}}</li>
+				<li class="nav__list-item">
+					<a href="{{url}}">{{title}}</a>
+				</li>
 				{{/each}}
 			</ul>
 		</nav>
