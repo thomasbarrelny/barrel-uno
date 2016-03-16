@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "links": [
+      {
+        "title": "about",
+        "url": ""
+      },
+      {
+        "title": "work",
+        "url": ""
+      },
+      {
+        "title": "tools",
+        "url": ""
+      },
+      {
+        "title": "blog",
+        "url": ""
+      },
+      {
+        "title": "careers",
+        "url": ""
+      },
+      {
+        "title": "contact",
+        "url": ""
+      }
+    ]
+  }
+}
