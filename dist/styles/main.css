@@ -383,13 +383,13 @@ body {
 .header {
   background: none no-repeat scroll 0 0 turquoise;
   color: #fff;
-  height: 100px; }
+  height: 80px; }
 
 .nav {
   float: right;
   font-size: 0.875rem;
   font-weight: 600;
-  padding: 40px 0; }
+  padding: 30px 0; }
 
 .nav__list-item {
   display: inline-block;

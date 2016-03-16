@@ -17,7 +17,7 @@ $b-font-weight: 400;
 
 /* HEADER
 -------------------------------------------------------*/
-$header-height: 100px;
+$header-height: 80px;
 $nav-height: 20px;
 $nav-font-size: 0.875rem;
 $nav-font-weight: 600;
