@@ -3,6 +3,10 @@
 	color: $c-header;
 	height: $header-height;
 }
+.header__container {
+	@extend %max-w;
+	@extend %center;
+}
 .nav {
 	float: right;
 	font-size: $nav-font-size;

@@ -430,6 +430,13 @@ th {
   -webkit-transition-property: color;
           transition-property: color; }
 
+.header__container {
+  max-width: 1280px; }
+
+.header__container {
+  height: 100%;
+  margin: 0 auto; }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
