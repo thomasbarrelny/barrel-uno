@@ -430,13 +430,6 @@ th {
   -webkit-transition-property: color;
           transition-property: color; }
 
-.header__container {
-  max-width: 1280px; }
-
-.header__container {
-  height: 100%;
-  margin: 0 auto; }
-
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -497,3 +490,15 @@ body {
 .footer {
   background: none no-repeat scroll 0 0 #F6F6F6;
   height: 300px; }
+
+.footer__container {
+  height: 100%;
+  padding: 30px; }
+
+.footer__list {
+  position: relative;
+  width: 100%; }
+
+.footer__list-item {
+  display: inline-block;
+  width: 25%; }

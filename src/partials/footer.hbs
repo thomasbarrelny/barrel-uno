@@ -1,5 +1,19 @@
+	{{#with footer}}
 	<footer class="footer">
-
+		<div class="footer__container">
+			<ul class="footer__list">
+				{{#each info}}
+				<li class="footer__list-item footer__{{class}}">
+					<h4 class="{{class}}__headline">{{headline}}</h4>
+					<ul class="{{class}}__list">
+						{{#each list}}
+						<li class="contact__list-item">{{this}}</li>
+						{{/each}}
+					</ul>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
 	</footer>
-	
+	{{/with}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

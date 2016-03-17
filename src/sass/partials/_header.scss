@@ -4,8 +4,7 @@
 	height: $header-height;
 }
 .header__container {
-	@extend %max-w;
-	@extend %center;
+	
 }
 .nav {
 	float: right;

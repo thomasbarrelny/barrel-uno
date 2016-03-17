@@ -1,0 +1,44 @@
+{
+  "info": [
+    {
+      "class": "contact",
+      "headline": "Contact us",
+      "list": [
+        "197 Grand Street, Suite 7S",
+        "New York, NY 10013",
+        "info@barrelny.com",
+        "212.239.2072"
+      ]
+    },
+    {
+      "class": "about",
+      "headline": "About us",
+      "list": [
+        "Lorem",
+        "Ipsum",
+        "Dolor",
+        "Amet"
+      ]
+    },
+    {
+      "class": "social",
+      "headline": "Social Networks",
+      "list": [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "LinkedIn"
+      ]
+    },
+    {
+      "class": "lorem",
+      "headline": "Lorem ipsum",
+      "list": [
+        "Lorem",
+        "Ipsum",
+        "Dolor",
+        "Amet"
+      ]
+    }
+  ]
+}

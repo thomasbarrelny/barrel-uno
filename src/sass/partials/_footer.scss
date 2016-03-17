@@ -2,3 +2,15 @@
 	background: none no-repeat scroll 0 0 $c-footer-bg;
 	height: $footer-height;
 }
+.footer__container {
+	height: 100%;
+	padding: 30px;
+}
+.footer__list {
+	position: relative;
+	width: 100%;
+}
+.footer__list-item {
+	display: inline-block;
+	width: 25%;
+}
