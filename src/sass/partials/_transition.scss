@@ -1,0 +1,10 @@
+%trans {
+	transition-duration: $transition-duration;
+	transition-timing-function: $transition-timing-function;
+}
+@each $prop in all, height, opacity, color, background-color, border-color, margin, transform, top, padding {
+	%trans-#{$prop} {
+		@extend %trans;
+		transition-property: $prop;
+	}
+}

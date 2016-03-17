@@ -6,8 +6,12 @@
 .nav {
 	float: right;
 	font-size: $nav-font-size;
-	font-weight: $nav-font-weight;
-	padding: ( $header-height - $nav-height )/2 0;
+	font-weight: 400;
+	padding: ($header-height - $nav-height)/2 0;
+
+	@include mappy-bp(max xs) {
+		display: none;
+	}
 }
 .nav__list {
 
@@ -18,7 +22,11 @@
 	text-transform: uppercase;
 
 	a {
-		color: #fff;
+		color: #363636;
 		text-decoration: none;
+
+		&:hover {
+			color: red;
+		}
 	}
 }

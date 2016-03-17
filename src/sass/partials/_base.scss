@@ -13,7 +13,18 @@ ol {
 	margin: 0;
 	padding: 0;
 }
+html,
 body {
 	cursor: default;
-	font: $b-font-weight $b-font-size $f-regular;
+	font: 400 $b-font-size $f-regular;
+	height: 100%;
+}
+.wrapper {
+    height: 100%;
+    height: auto !important;
+    margin-bottom: -$footer-height;
+    min-height: 100%;
+}
+.main {
+	padding: 0 0 $footer-height 0;
 }

@@ -16,7 +16,8 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -353,14 +354,72 @@ td,
 th {
   padding: 0; }
 
+/* BREAKPOINTS
+** --------------------------------------------------------------------------------- */
 /* FONTS
--------------------------------------------------------*/
+** --------------------------------------------------------------------------------- */
 /* COLORS
--------------------------------------------------------*/
+** --------------------------------------------------------------------------------- */
+/* TRANSITIONS
+** --------------------------------------------------------------------------------- */
 /* BASE
--------------------------------------------------------*/
+** --------------------------------------------------------------------------------- */
 /* HEADER
--------------------------------------------------------*/
+** --------------------------------------------------------------------------------- */
+/* FOOTER
+** --------------------------------------------------------------------------------- */
+/* Mappy breakpoints
+** ---------------------------------------------------------------------------------
+** Output media query with focus on min-width, max-width, min-height and max-height. 
+** Other media rules are passed as the second argument in a map
+** 
+** @author Zell Liew      
+** =================================================================================
+*/
+/* Mappy BP [Mixin]
+** ---------------------------------------------------------------------------------
+** - $queries         : <string> or <number> in the format: 
+**                      <min-width> <max-width> h <min-height> <max-height> <key> <value>
+** - $type            : <media-type> 
+** - $query-fallback  : <string> selector class
+** - $breakpoints     : <map>
+*/
+/* Mappy Query [Mixin]
+** ---------------------------------------------------------------------------------
+** Output query from $mappy-queries map. 
+** $query : <string> from $mappy-queries key
+*/
+/* Mappy BP [Function]
+** ---------------------------------------------------------------------------------
+** Returns a map with 3 keys
+** - type           : Media type
+** - media-string   : media query string
+** - query-fallback : query fallback (if any)
+*/
+/* BP [Mixin]
+** ---------------------------------------------------------------------------------
+** Convenience mixin for Mappy Breakpoints
+*/
+/* Parse BP [function]
+** ---------------------------------------------------------------------------------
+** Parses arguments and returns a map with 4 keys
+*/
+/* Mappy Validate [Function]
+** ---------------------------------------------------------------------------------
+** Checks if $query given is one of the following: 
+** 1) Is a $key in the $breakpoints map
+** 2) Is a number
+** 3) Is a "max", "max-width" or "max-height" string
+*/
+/* Mappy Convert To Em [Function]
+** ---------------------------------------------------------------------------------
+** Checks and converts px values to em. Leave other units untouched.
+*/
+/* Mappy Em [Function]
+** ---------------------------------------------------------------------------------
+** Converts pixels to em with $base-font-size
+** - https://gist.github.com/ijy/1441967
+*/
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -376,25 +435,48 @@ ol {
   margin: 0;
   padding: 0; }
 
+html,
 body {
   cursor: default;
-  font: 400 16px Open Sans, Arial, sans-serif; }
+  font: 400 16px Open Sans, Arial, sans-serif;
+  height: 100%; }
+
+.wrapper {
+  height: 100%;
+  height: auto !important;
+  margin-bottom: -80px;
+  min-height: 100%; }
+
+.main {
+  padding: 0 0 80px 0; }
 
 .header {
-  background: none no-repeat scroll 0 0 turquoise;
-  color: #fff;
+  background: none no-repeat scroll 0 0 #fff;
+  color: #363636;
   height: 80px; }
 
 .nav {
   float: right;
   font-size: 0.875rem;
-  font-weight: 600;
-  padding: 30px 0; }
+  font-weight: 400;
+  padding: 30px 0;
+  /* Gets mappy map through mappy-bp fn. */
+  /* Outputs media string. */
+  /* If a query fallback is provided. */ }
+  @media all and (max-width: 39.9375em) {
+    .nav {
+      display: none; } }
 
 .nav__list-item {
   display: inline-block;
   margin: 0 30px;
   text-transform: uppercase; }
   .nav__list-item a {
-    color: #fff;
+    color: #363636;
     text-decoration: none; }
+    .nav__list-item a:hover {
+      color: red; }
+
+.footer {
+  background: none no-repeat scroll 0 0 #fff;
+  height: 80px; }

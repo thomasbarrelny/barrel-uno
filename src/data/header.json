@@ -2,27 +2,23 @@
   "nav": {
     "links": [
       {
-        "title": "about",
+        "title": "lorem",
         "url": ""
       },
       {
-        "title": "work",
+        "title": "dolor",
         "url": ""
       },
       {
-        "title": "tools",
+        "title": "sit",
         "url": ""
       },
       {
-        "title": "blog",
+        "title": "amet",
         "url": ""
       },
       {
-        "title": "careers",
-        "url": ""
-      },
-      {
-        "title": "contact",
+        "title": "ipsum",
         "url": ""
       }
     ]
