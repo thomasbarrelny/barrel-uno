@@ -7,11 +7,8 @@
 	float: right;
 	font-size: $nav-font-size;
 	font-weight: 400;
+	letter-spacing: 0.1em;
 	padding: ($header-height - $nav-height)/2 0;
-
-	@include mappy-bp(max xs) {
-		display: none;
-	}
 }
 .nav__list {
 
@@ -22,11 +19,16 @@
 	text-transform: uppercase;
 
 	a {
-		color: #363636;
+		color: $c-nav-link;
 		text-decoration: none;
+		@extend %trans-color;
 
 		&:hover {
-			color: red;
+			color: $c-nav-link-hover;
 		}
 	}
+}
+
+@include mappy-bp(max xs) {
+
 }

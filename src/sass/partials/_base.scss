@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	font-smooth: always;
 }
 img {
 	max-width: 100%;

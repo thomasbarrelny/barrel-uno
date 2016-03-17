@@ -420,10 +420,22 @@ th {
 ** Converts pixels to em with $base-font-size
 ** - https://gist.github.com/ijy/1441967
 */
+.nav__list-item a {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out; }
+
+.nav__list-item a {
+  -webkit-transition-property: color;
+          transition-property: color; }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  font-smooth: always; }
 
 img {
   max-width: 100%;
@@ -444,14 +456,14 @@ body {
 .wrapper {
   height: 100%;
   height: auto !important;
-  margin-bottom: -80px;
+  margin-bottom: -300px;
   min-height: 100%; }
 
 .main {
-  padding: 0 0 80px 0; }
+  padding: 0 0 300px 0; }
 
 .header {
-  background: none no-repeat scroll 0 0 #fff;
+  background: none no-repeat scroll 0 0 #FFF;
   color: #363636;
   height: 80px; }
 
@@ -459,13 +471,8 @@ body {
   float: right;
   font-size: 0.875rem;
   font-weight: 400;
-  padding: 30px 0;
-  /* Gets mappy map through mappy-bp fn. */
-  /* Outputs media string. */
-  /* If a query fallback is provided. */ }
-  @media all and (max-width: 39.9375em) {
-    .nav {
-      display: none; } }
+  letter-spacing: 0.1em;
+  padding: 30px 0; }
 
 .nav__list-item {
   display: inline-block;
@@ -475,8 +482,11 @@ body {
     color: #363636;
     text-decoration: none; }
     .nav__list-item a:hover {
-      color: red; }
+      color: #008CBB; }
 
+/* Gets mappy map through mappy-bp fn. */
+/* Outputs media string. */
+/* If a query fallback is provided. */
 .footer {
-  background: none no-repeat scroll 0 0 #fff;
-  height: 80px; }
+  background: none no-repeat scroll 0 0 #F6F6F6;
+  height: 300px; }

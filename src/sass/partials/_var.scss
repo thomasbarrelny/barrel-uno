@@ -18,8 +18,10 @@ $f-regular: Open Sans, Arial, sans-serif;
 /* COLORS
 ** --------------------------------------------------------------------------------- */
 $c-header: #363636;
-$c-header-bg: #fff;
-$c-footer-bg: #fff;
+$c-header-bg: #FFF;
+$c-nav-link: #363636;
+$c-nav-link-hover: #008CBB;
+$c-footer-bg: #F6F6F6;
 
 
 /* TRANSITIONS
@@ -42,4 +44,4 @@ $nav-font-size: 0.875rem;
 
 /* FOOTER
 ** --------------------------------------------------------------------------------- */
-$footer-height: 80px;
+$footer-height: 300px;
