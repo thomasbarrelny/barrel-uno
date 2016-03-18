@@ -23,10 +23,12 @@ $f-regular: Open Sans, Arial, sans-serif;
 
 /* COLORS
 ** --------------------------------------------------------------------------------- */
-$c-header: #363636;
+$c-base: #363636;
 $c-header-bg: #FFF;
 $c-nav-link: #363636;
 $c-nav-link-hover: #008CBB;
+$c-footer: #7F7F7F;
+$c-footer-headline: #B6B6B6;
 $c-footer-bg: #F6F6F6;
 
 
@@ -50,4 +52,5 @@ $nav-font-size: 0.875rem;
 
 /* FOOTER
 ** --------------------------------------------------------------------------------- */
-$footer-height: 300px;
+$footer-height: 220px;
+$footer-height-s: 180px;

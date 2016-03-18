@@ -21,9 +21,12 @@ ol {
 }
 html,
 body {
+	color: $c-base;
 	cursor: default;
 	font: 400 $b-font-size $f-regular;
 	height: 100%;
+	letter-spacing: 0.5px;
+	min-width: 300px;
 }
 .wrapper {
     height: 100%;

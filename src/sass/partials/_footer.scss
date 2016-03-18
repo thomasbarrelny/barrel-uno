@@ -1,16 +1,77 @@
 .footer {
 	background: none no-repeat scroll 0 0 $c-footer-bg;
+	color: $c-footer;
+	font-weight: 600;
 	height: $footer-height;
 }
 .footer__container {
 	height: 100%;
 	padding: 30px;
+	
+	@include mappy-bp(max xs) {
+		padding: 30px 20px;
+	}
 }
 .footer__list {
+	height: 100%;
+	font-size: 0.75rem;
 	position: relative;
 	width: 100%;
+
+	@include cfx;
 }
 .footer__list-item {
-	display: inline-block;
+	border-left: 1px solid #DDD;
+	height: 100%;
+	float: left;
 	width: 25%;
+	
+	@include mappy-bp(max s) {
+		width: 50%;
+	}
+}
+.footer__list-item:first-child {
+	border-left: none;
+}
+.footer__col-2,
+.footer__col-3,
+.footer__col-4 {
+	padding: 0 0 0 20px;
+}
+.footer__col-3,
+.footer__col-4 {
+	@include mappy-bp(max s) {
+		display: none;
+	}
+}
+.footer__col-2 {
+	@include mappy-bp(max s) {
+		text-align: right;
+	}
+}
+.col-1__headline,
+.col-2__headline,
+.col-3__headline,
+.col-4__headline {
+	color: $c-footer-headline;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+}
+.col-1__headline,
+.col-2__headline {
+	@include mappy-bp(max xs) {
+		display: none;
+	}
+}
+.col-1__list-item,
+.col-2__list-item,
+.col-3__list-item,
+.col-4__list-item {
+	margin: 4px 0 0;
+}
+.col-1__list-item:first-child,
+.col-2__list-item:first-child,
+.col-3__list-item:first-child,
+.col-4__list-item:first-child {
+	margin: 0;
 }

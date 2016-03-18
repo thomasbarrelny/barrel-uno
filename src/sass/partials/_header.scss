@@ -1,10 +1,9 @@
 .header {
 	background: none no-repeat scroll 0 0 $c-header-bg;
-	color: $c-header;
 	height: $header-height;
 }
 .header__container {
-	
+	@include cfx;
 }
 .nav {
 	float: right;
@@ -12,13 +11,24 @@
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	padding: ($header-height - $nav-height)/2 0;
+	
+	@include mappy-bp(max s) {
+		padding: 15px 0;
+		width: 100%;
+	}
 }
 .nav__list {
+	width: 100%;
+	
+	@include cfx;
 
+	@include mappy-bp(max s) {
+		text-align: center;
+	}
 }
 .nav__list-item {
-	display: inline-block;
-	margin: 0 30px;
+	float: left;
+	padding: 0 30px;
 	text-transform: uppercase;
 
 	a {
@@ -30,8 +40,9 @@
 			color: $c-nav-link-hover;
 		}
 	}
-}
-
-@include mappy-bp(max xs) {
-
+	
+	@include mappy-bp(max s) {
+		float: none;
+		padding: 14px 0;
+	}
 }
